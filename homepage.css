@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@300&display=swap');
+
+
+/* HEADER */
+body {
+    height: 1200px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 1920px;
+    height: 114px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    color: #898989;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__menu-img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 34px;
+    margin-left: 32px;
+}
+
+.menu-img {
+    width: 20px;
+    height: 17px;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    width: 116px;
+    height: 25px;
+    margin-left: 28px;
+    margin-top: 30px;
+}
+
+.youtube-icon {
+    width: 36.64px;
+    height: 24.99px;
+}
+
+.youtube-logo {
+    width: 74.59px;
+    height: 22.69px;
+}
+
+.header__searchbar {
+    margin-top: 20px;
+    margin-left: 59px;
+}
+
+.searchbar {
+    width: 830px;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBEBEB;
+}
+
+.searchbar-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 22px;
+    padding-left: 23px;
+    background-color: #EBEBEB;
+}
+
+.searchbar-icon {
+    width: 18.21px;
+    height: 18.21px;
+    margin-right: 17.8px;
+}
+
+.header__toolsgroup {
+    width: 175px;
+    height: 32px;
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.videotool {
+    width: 27px;
+    height: 20px;
+    margin-top: 9px;
+}
+
+.combinedtool {
+    width: 21px;
+    height: 21px;
+    margin-top: 9px;
+}
+
+.bellgroup {
+    position: relative;
+}
+
+.belltool {
+    width: 22px;
+    height: 26px;
+    margin-top: 6px;
+}
+
+.bellnumber {
+    width: 8px;
+    height: 15px;
+}
+
+.bellnumber-wrapper {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #FF0000;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__rightgroup {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.header__userphoto {
+    display: flex;
+    justify-self: end;
+    margin-top: 22px;
+    margin-right: 70px;
+    margin-left: 45px;
+    height: fit-content;
+}
+
+.userphoto {
+    width: 40px;
+    height: 40px;
+}
+
+/*MAIN*/
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* SIDEBAR */
+
+.aside {
+    width: 255px;
+    height: 1046px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    color: #898989;
+    box-sizing: border-box;
+}
+
+/* UPPER NAVIGATION*/
+
+.upper-navigation {
+    height: 117px;
+}
+
+.upper-list {
+    padding: 0;
+    margin: 0;
+}
+
+.upper-list__elem {
+    list-style-type: none;
+    padding-left: 31px;
+    margin-bottom: 28px;
+    display: flex;
+}
+
+.upper-list__elem:first-child {
+    color: #FF0000;
+}
+
+.upper-list__elem:last-child {
+    margin-bottom: 0;
+}
+
+.upper-list__img_home {
+    width: 20px;
+    height: 19px;
+    margin-right: 13px;
+}
+
+.upper-list__img_trending {
+    width: 16px;
+    height: 21px;
+    margin-right: 15px;
+}
+
+.upper-list__img_subscriptions {
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+}
+
+/* MIDDLE NAVIGATION */
+.middle-navigation {
+    height: 363px;
+    margin-top: 60px;
+}
+
+.middle-list {
+    padding: 0;
+    margin: 0;
+}
+
+.middle-list__elem {
+    list-style-type: none;
+    padding-left: 31px;
+    margin-bottom: 29px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.middle-list__img_library {
+    width: 20px;
+    height: 16px;
+    margin-right: 13px;
+}
+
+.middel-list__img_history {
+    width: 20px;
+    height: 18px;
+    margin-right: 13px;
+}
+
+.middle-list__img_watch {
+    width: 17px;
+    height: 19px;
+    margin-right: 14px;
+}
+
+.middle-list__img_favourites {
+    width: 19px;
+    height: 18px;
+    margin-right: 13px;
+}
+
+.middle-list__img_liked {
+    width: 18px;
+    height: 17px;
+    margin-right: 14px;
+}
+
+.middle-list__img_music {
+    width: 18px;
+    height: 20px;
+    margin-right: 14px;
+}
+
+.middle-list__img_games {
+    width: 22px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.middle-list__img_show {
+    width: 14px;
+    height: 8px;
+    margin-right: 16px;
+    align-self: center;
+}
+
+/*SUBSCRIPTIONS SECTION*/
+.subscriptions {
+    height: 324px;
+    margin-top: 58px;
+}
+
+.subscriptions-headline {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 0;
+    color: #000000;
+}
+
+.subscriptions-list {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.subscriptions-list__elem {
+    list-style-type: none;
+    margin-left: 30px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.subscriptions-list__elem:last-child {
+    margin-bottom: 0px;
+}
+
+.subscription-list__image {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+/*SETTINGS*/
+
+.setting-wrapper {
+    width: 84px;
+    height: 20px;
+    margin-left: 34px;
+    margin-top: 104px;
+    color: #C2C2C2;
+    font-weight: 400;
+    display: flex;
+}
+
+.setting-img {
+    width: 19px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.setting-p {
+    width: 53px;
+    font-size: 16px;
+}
+
+/* MAIN-RECOMMENDED SECTION */
+
+.recommended {
+    width: 1665px;
+    height: 363px;
+    margin-top: 49px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommended-info {
+    position: relative;
+}
+
+.recommended__headline {
+    margin: 0;
+    font: 26px;
+    line-height: 32.63px;
+}
+
+.recommended-wrapper {
+    height: 300px;
+    margin-top: 30px;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.recommended-video__elem {
+    width: 540px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    position: relative;
+}
+
+.recommended-video {
+    width: 540px;
+    height: 250px;
+}
+
+.recommended-video__span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 216px;
+    right: 10px;
+    width: 47px;
+    height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    line-height: 17.57px;
+    border-radius: 12px;
+}
+
+.recommended-video__name {
+    color: #19202C;
+    font-size: 16px;
+    line-height: 20.08px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.recommended-video__info {
+    display: flex;
+    color: #C2C2C2;
+    font-size: 12px;
+    line-height: 15.06px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+
+
+
+/* MAIN-PERSONAL SECTION */
+
+.personal {
+    width: 1665px;
+    height: 280px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    /*width: 205px;*/
+    position: relative;
+}
+
+.arrows {
+    width: 66px;
+    height: 28px;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    right: 149px;
+    bottom: 0;
+    z-index: 2;
+}
+
+.arrow {
+    width: 11.2px;
+    height: 7px;
+}
+
+.arrow-p {
+    width: 28px;
+    height: 28px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.arrow-p:first-child {
+    margin-right: 10px;
+
+}
+
+.personal-photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.personal-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #19202C;
+    line-height: 33px;
+    width: 135px;
+}
+.video-wrapper {
+    height: 200px;
+    margin-top: 30px;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.personal-video__elem {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    position: relative;
+}
+
+.personal-video {
+    width: 250px;
+    height: 150px;
+}
+
+.personal-video__span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 116px;
+    right: 10px;
+    width: 47px;
+    height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 12px;
+}
+
+.personal-video__name {
+    color: #19202C;
+    font-size: 16px;
+    line-height: 20.08px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.personal-video__info {
+    display: flex;
+    color: #C2C2C2;
+    font-size: 13px;
+    line-height: 16px;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+/*FOOD*/
+
+.food {
+    width: 1665px;
+    height: 280px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.subscribe-btn {
+    width: 154px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #FF0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    position: absolute;
+    right: 274.5px;
+    bottom: -10px;
+    color: #FFFFFF;
+}
+
+.food-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.food-photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.food-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #19202C;
+    line-height: 33px;
+    margin: 0;
+}
+
+.food-infospan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 19px;
+    color: #C2C2C2;
+}
+
+.video-wrapper {
+    height: 200px;
+    margin-top: 30px;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.food-video__elem {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    position: relative;
+}
+
+.food-video {
+    width: 250px;
+    height: 150px;
+}
+
+.food-video__span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 116px;
+    right: 10px;
+    width: 47px;
+    height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 12px;
+}
+
+.food-video__name {
+    color: #19202C;
+    font-size: 16px;
+    line-height: 20.08px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.food-video__info {
+    display: flex;
+    color: #C2C2C2;
+    font-size: 13px;
+    line-height: 16px;
+    justify-content: space-between;
+    margin-top: 4px;
+}
