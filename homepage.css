@@ -160,7 +160,9 @@ body {
 /* SIDEBAR */
 
 .aside {
-    width: 255px;
+    display: flex;
+    flex-direction: column;
+    min-width: 255px;
     height: 1046px;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
