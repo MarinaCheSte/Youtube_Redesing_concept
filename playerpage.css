@@ -1,155 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@300&display=swap');
 
 
-/* HEADER */
-body {
-    height: 1200px;
-    font-family: 'Mulish', sans-serif;
-    font-size: 16px;
-}
-
-.wrapper {
-    width: 1920px;
-    height: 94px;
-    font-family: 'Mulish', sans-serif;
-    font-size: 16px;
-    color: #898989;
-}
-
-.header-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
-.header__menu-img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 34px;
-    margin-left: 32px;
-}
-
-.menu-img {
-    width: 20px;
-    height: 17px;
-}
-
-.header__logo {
-    display: flex;
-    flex-direction: row;
-    width: 116px;
-    height: 25px;
-    margin-left: 28px;
-    margin-top: 30px;
-}
-
-.youtube-icon {
-    width: 36.64px;
-    height: 24.99px;
-}
-
-.youtube-logo {
-    width: 74.59px;
-    height: 22.69px;
-}
-
-.header__searchbar {
-    margin-top: 20px;
-    margin-left: 59px;
-}
-
-.searchbar {
-    width: 830px;
-    height: 44px;
-    border-radius: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #EBEBEB;
-}
-
-.searchbar-input {
-    border: none;
-    outline: none;
-    width: 100%;
-    border-radius: 22px;
-    padding-left: 23px;
-    background-color: #EBEBEB;
-}
-
-.searchbar-icon {
-    width: 18.21px;
-    height: 18.21px;
-    margin-right: 17.8px;
-}
-
-.header__toolsgroup {
-    width: 175px;
-    height: 32px;
-    margin-top: 23px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.videotool {
-    width: 27px;
-    height: 20px;
-    margin-top: 9px;
-}
-
-.combinedtool {
-    width: 21px;
-    height: 21px;
-    margin-top: 9px;
-}
-
-.bellgroup {
-    position: relative;
-}
-
-.belltool {
-    width: 22px;
-    height: 26px;
-    margin-top: 6px;
-}
-
-.bellnumber {
-    width: 8px;
-    height: 15px;
-}
-
-.bellnumber-wrapper {
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    background-color: #FF0000;
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    right: -4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__rightgroup {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-}
-.header__userphoto {
-    display: flex;
-    justify-self: end;
-    margin-top: 22px;
-    margin-right: 70px;
-    margin-left: 45px;
-    height: fit-content;
-}
-
-.userphoto {
-    width: 40px;
-    height: 40px;
-}
-
 /*MAIN*/
 
 .player-main {
@@ -203,6 +54,8 @@ body {
     display: flex;
     flex-direction: row;
     height: fit-content;
+    width: 388px;
+    justify-content: space-between;
 }
 
 .views-text {
@@ -236,6 +89,9 @@ body {
     background-color: #FFFFFF;
     justify-content: flex-end;
     margin-right: 0;
+    width: fit-content;
+    margin-left: 40px;
+    border: solid red 1px;
 }
 
 .like {
@@ -270,7 +126,7 @@ body {
     width: 1297px;
     height: 103px;
     position: absolute;
-    top: 564px;
+    top: 567px;
     right: 33px;
 }
 
@@ -285,6 +141,9 @@ body {
     font-size: 22px;
     line-height: 28px;
     color: #FFFFFF;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .progress-bar {
@@ -301,7 +160,7 @@ body {
 
 .control-left {
     display: flex;
-    margin-top: 21px;
+    margin-top: 13px;
 }
 
 .control-elem {
@@ -316,7 +175,7 @@ body {
 }
 
 .control-elem_next {
-    margin-right: 34px;
+    margin-right: 40px;
 }
 
 .control-elem_volume {
@@ -347,12 +206,14 @@ body {
 
 .control-right {
     display: flex;
-    margin-top: 19px;
+    justify-content: space-between;
+    margin-top: 16px;
+    width: 192px;
+    margin-right: 10px;
+
 }
 
-.control-elem_subtitles {
-    margin-right: 27px;
-}
+.control-elem_subtitles {}
 
 .subtitles {
     width: 27px;
@@ -362,15 +223,12 @@ body {
 .settings {
     width: 27px;
     height: 27px;
+
 }
 
-.control-elem_settings {
-    margin-right: 25px;
-}
+.control-elem_settings {}
 
-.control-elem_size {
-    margin-right: 23px;
-}
+.control-elem_size {}
 
 .size {
     width: 30px;
@@ -380,6 +238,7 @@ body {
 .fullscreen {
     width: 33px;
     height: 24px;
+
 }
 
 /*RIGHT SECTION*/
@@ -396,6 +255,7 @@ body {
 .video-info {
     margin-top: 38px;
     display: flex;
+    margin-left: -5px;
 }
 
 .food-theme {
@@ -403,10 +263,14 @@ body {
     height: 80px;
 }
 
+.theme-photo {
+    width: fit-content;
+}
+
 .theme-text {
     display: flex;
     flex-direction: column;
-    margin-left: 12px;
+    margin-left: 13px;
     width: 820px;
     height: 195px;
 }
@@ -454,6 +318,7 @@ body {
     color: #000000;
     margin: 0;
     margin-top: 14px;
+    width: 820px;
 }
 
 .theme-showmore {
@@ -516,12 +381,14 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 23px;
+    margin-top: 28px;
 }
 
-.theme-video__elem:first-child {
-    margin-top: 26px;
+.theme-video__elem_second {
+    margin-top: 20px;
 }
+
+
 
 .theme-video {
     width: 367px;

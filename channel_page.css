@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@300&display=swap');
+
 /*COVER SECTION*/
 
 .channel-cover {
     width: 1595px;
     height: 280px;
-    margin-top: -20px;
+    margin: 0px;
     background-image: url(./images/channel_cover.png);
+}
+
+.main_channel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
 }
 
 /*CHANNEL NAVIGATION*/
@@ -21,14 +29,18 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-left: 3px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 23px;
 }
 
 .channel-navigation__elem {
     margin-right: 69px;
+    line-height: 23px;
+}
 
+.channel-navigation__elem:first-child {
+    color: #FF0000;
 }
 
 .two-column {
@@ -37,10 +49,10 @@
 /*RIGHT SECTION*/
 
 .right-section__wrapper {
-    width: 188px;
+    width: 190px;
     height: 260px;
     margin-left: 204px;
-    margin-top: 62px;
+    margin-top: 22px;
     display: flex;
     flex-direction: column;
 }
@@ -66,6 +78,9 @@
 
 .name-span {
     margin-left: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
 }
 
 
@@ -78,6 +93,17 @@
 }
 .avatar-wrapper {
     display: flex;
+
+}
+
+.channel-personal__photo {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
 }
 
 .channel-personal__info {
@@ -135,6 +161,9 @@
 
 .channel-bell__wrapper {
     margin-right: 20px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 /*CHANNEL ARTICLE*/
@@ -142,13 +171,30 @@
 .channel-article__wrapper {
     width: 1120px;
     height: 250px;
-    margin-top: 54px;
+    margin-top: 59px;
     display: flex;
 }
 
 .channel-article__image {
     width: 540px;
     height: 250px;
+    position: relative;
+}
+
+.article-video__span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 216px;
+    right: 10px;
+    width: 47px;
+    height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 12px;
 }
 
 .article-image {
@@ -168,7 +214,7 @@
     line-height: 34px;
     color: #19202C;
     margin: 0;
-    margin-top: 17px;
+    margin-top: 19px;
     max-width: 431px;
 }
 
@@ -213,7 +259,9 @@
     font-weight: 700;
     color: #19202C;
     line-height: 33px;
-    margin: 0;
+    margin: 0px;
+    margin-left: 4px;
+
 }
 
 .channel-video__wrapper {
@@ -235,6 +283,10 @@
 .channel-video__video {
     width: 250px;
     height: 150px;
+}
+
+.channel-video__video_last {
+    background-image: url(./images/sports_channel.png);
 }
 
 .channel-video__span {
@@ -259,6 +311,7 @@
     line-height: 20.08px;
     margin: 0;
     margin-top: 10px;
+    font-weight: 700;
 }
 
 .channel-video__info {

@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@300&display=swap');
 
 
 /* HEADER */
 body {
-    height: 1200px;
+    max-height: 1200px;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .wrapper {
-    width: 1920px;
-    height: 114px;
+    max-width: 1920px;
+    height: 94px;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     color: #898989;
@@ -43,8 +44,10 @@ body {
 }
 
 .youtube-icon {
-    width: 36.64px;
-    height: 24.99px;
+    max-width: 36.64px;
+    min-height: 24.99px;
+    margin-right: 3.67px;
+    cursor: pointer;
 }
 
 .youtube-logo {
@@ -87,23 +90,52 @@ body {
     height: 32px;
     margin-top: 23px;
     display: flex;
-    justify-content: space-between;
+}
+
+@media(max-width:1919px) {
+    .header__toolsgroup {
+        justify-content: space-between;
+    }
 }
 
 .videotool {
     width: 27px;
     height: 20px;
     margin-top: 9px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+@media(max-width:1919px) {
+    .videotool {
+        margin-right: 0;
+    }
 }
 
 .combinedtool {
     width: 21px;
     height: 21px;
     margin-top: 9px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+@media(max-width:1919px) {
+    .combinedtool {
+        margin-right: 0;
+    }
 }
 
 .bellgroup {
     position: relative;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+@media(max-width:1919px) {
+    .bellgroup {
+        margin-right: 0;
+    }
 }
 
 .belltool {
@@ -155,6 +187,15 @@ body {
 .main {
     display: flex;
     flex-direction: row;
+
+}
+
+.main-section {
+    margin-top: 20px;
+}
+
+.aside {
+    margin-top: 20px;
 }
 
 /* SIDEBAR */
@@ -183,9 +224,10 @@ body {
 
 .upper-list__elem {
     list-style-type: none;
-    padding-left: 31px;
+    padding-left: 33px;
     margin-bottom: 28px;
     display: flex;
+    cursor: pointer;
 }
 
 .upper-list__elem:first-child {
@@ -227,11 +269,12 @@ body {
 
 .middle-list__elem {
     list-style-type: none;
-    padding-left: 31px;
+    padding-left: 32px;
     margin-bottom: 29px;
     height: 20px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .middle-list__img_library {
@@ -249,7 +292,7 @@ body {
 .middle-list__img_watch {
     width: 17px;
     height: 19px;
-    margin-right: 14px;
+    margin-right: 15px;
 }
 
 .middle-list__img_favourites {
@@ -279,7 +322,7 @@ body {
 .middle-list__img_show {
     width: 14px;
     height: 8px;
-    margin-right: 16px;
+    margin-right: 18px;
     align-self: center;
 }
 
@@ -299,7 +342,7 @@ body {
 .subscriptions-list {
     padding: 0;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 32px;
 }
 
 .subscriptions-list__elem {
@@ -309,6 +352,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 23px;
+    cursor: pointer;
 }
 
 .subscriptions-list__elem:last-child {
@@ -331,6 +375,7 @@ body {
     color: #C2C2C2;
     font-weight: 400;
     display: flex;
+    cursor: pointer;
 }
 
 .setting-img {
@@ -349,7 +394,7 @@ body {
 .recommended {
     width: 1665px;
     height: 363px;
-    margin-top: 49px;
+    margin-top: 49.5px;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -361,7 +406,9 @@ body {
 
 .recommended__headline {
     margin: 0;
-    font: 26px;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Mulish', sans-serif;
     line-height: 32.63px;
 }
 
@@ -379,11 +426,16 @@ body {
     flex-direction: column;
     margin-right: 40px;
     position: relative;
+    cursor: pointer;
 }
 
 .recommended-video {
     width: 540px;
     height: 250px;
+}
+
+.recommended-video_last {
+    background: url(./images/girl.jpg);
 }
 
 .recommended-video__span {
@@ -405,6 +457,7 @@ body {
 .recommended-video__name {
     color: #19202C;
     font-size: 16px;
+    font-weight: 700;
     line-height: 20.08px;
     margin: 0;
     margin-top: 10px;
@@ -485,8 +538,10 @@ body {
     color: #19202C;
     line-height: 33px;
     width: 135px;
+
 }
-.video-wrapper {
+
+.video-wrapper_personal {
     height: 200px;
     margin-top: 30px;
     overflow-x: hidden;
@@ -500,11 +555,16 @@ body {
     flex-direction: column;
     margin-right: 40px;
     position: relative;
+    cursor: pointer;
 }
 
 .personal-video {
     width: 250px;
     height: 150px;
+}
+
+.personal-video_last {
+    background-image: url(./images/moon-img.png);
 }
 
 .personal-video__span {
@@ -563,8 +623,8 @@ body {
     line-height: 20px;
     border: none;
     position: absolute;
-    right: 274.5px;
-    bottom: -10px;
+    right: 255px;
+    bottom: -5px;
     color: #FFFFFF;
 }
 
@@ -587,6 +647,9 @@ body {
     color: #19202C;
     line-height: 33px;
     margin: 0;
+    align-self: center;
+    height: fit-content;
+
 }
 
 .food-infospan {
@@ -595,11 +658,13 @@ body {
     line-height: 20px;
     margin-left: 19px;
     color: #C2C2C2;
+    align-self: center;
+    margin-top: 7px;
 }
 
 .video-wrapper {
     height: 200px;
-    margin-top: 30px;
+    margin-top: 29px;
     overflow-x: hidden;
     display: flex;
 }
@@ -611,11 +676,16 @@ body {
     flex-direction: column;
     margin-right: 40px;
     position: relative;
+    cursor: pointer;
 }
 
 .food-video {
     width: 250px;
     height: 150px;
+}
+
+.food-video_last {
+    background-image: url(./images/watermelon.png);
 }
 
 .food-video__span {
