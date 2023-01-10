@@ -12,10 +12,6 @@ body {
     box-sizing: border-box;
 }
 
-.header {
-    /* border: solid red 1px;*/
-}
-
 .header-wrapper {
     max-width: 192rem;
     height: 9.4rem;
@@ -51,7 +47,7 @@ body {
     }
 }
 
-.header__logo {
+.header__logo, .header__logo_channel {
     display: flex;
     flex-direction: row;
     max-width: 11.6rem;
@@ -59,6 +55,8 @@ body {
     margin-left: 2.8rem;
     margin-top: 3rem;
 }
+
+
 
 @media(max-width:690px) {
     .header__logo {
@@ -79,7 +77,29 @@ body {
     }
 }
 
-.youtube-icon {
+.header__logo_mobile {
+    display: none;
+}
+
+.header__logo_channel {
+    margin-top: 1.2rem;
+}
+
+@media(max-width:320px) {
+    .header__logo_channel {
+        display: none;
+    }
+
+    .header__logo_mobile {
+        display: flex;
+        margin-top: 1.2rem;
+        margin-left: 1.6rem;
+        min-width: 17.5rem;
+    }
+}
+
+
+.youtube-icon, .youtube-icon_mobile {
     width: 3.664rem;
     height: 2.499rem;
     margin-right: 0.367rem;
@@ -91,7 +111,7 @@ body {
     height: 2.269rem;
 }
 
-.header__searchbar {
+.header__searchbar, .header__searchbar_channel {
     margin-top: 2rem;
     margin-left: 5.9rem;
     display: flex;
@@ -99,13 +119,13 @@ body {
 }
 
 @media(max-width:586px) {
-    .header__searchbar {
+    .header__searchbar, .header__searchbar_channel {
         margin-left: 3rem;
     }
 }
 
 @media(max-width:500px) {
-    .header__searchbar {
+    .header__searchbar, .header__searchbar_channel {
         margin-top: 1.5rem;
         width: fit-content;
         margin-left: 15rem;
@@ -113,10 +133,16 @@ body {
 }
 
 @media(max-width:430px) {
-    .header__searchbar {
+    .header__searchbar, .header__searchbar_channel {
         margin-top: 1.5rem;
         width: fit-content;
         margin-left: 5rem;
+    }
+}
+
+@media(max-width:320px) {
+    .header__searchbar, .header__searchbar_channel {
+        margin-left: 2.5rem;
     }
 }
 
@@ -128,6 +154,10 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(235, 235, 235, 0.3);
+}
+
+.mobile-search_channel {
+    margin-right: 1rem;
 }
 
 @media(max-width:1470px) {
@@ -188,6 +218,16 @@ body {
         display: flex;
         margin-left: 6rem;
     }
+}
+
+.name-mobile {
+    margin: 0;
+    margin-left: 6px;
+    margin-top: 1px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #19202C;
 }
 
 .header__toolsgroup {
@@ -326,15 +366,16 @@ body {
     }
 }
 
-.mobile-dot {
+.mobile-dot, .mobile-dot_channel {
     display: none;
     width: 0.5rem;
     height: 1.9rem;
     margin-right: 0.4rem;
 }
 
+
 @media(max-width:500px) {
-    .mobile-dot {
+    .mobile-dot, .mobile-dot_channel {
         display: flex;
         margin-top: 0.5rem;
     }

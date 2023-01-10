@@ -16,15 +16,23 @@
             <div class="header__menu-img">
                 <img class="menu-img" src="./images/menu.svg" alt="menu">
             </div>
-            <div class="header__logo">
+            <div class="header__logo_channel">
                 <img class="youtube-icon" src="./images/icon.svg" alt="icon">
                 <img class='youtube-logo' src="./images/logo.svg" alt="logo">
             </div>
-            <div class="header__searchbar">
+            <div class="header__logo_mobile">
+                <img class="youtube-icon_mobile" src="./images/icon.svg" alt="icon">
+                <p class="name-mobile">Margaret Phelps</p>
+            </div>
+            <div class="header__searchbar_channel">
                 <div class="searchbar">
                     <input class="searchbar-input" placeholder="Search">
                     </input>
                     <img class="searchbar-icon" src="./images/search.svg" alt="search">
+                </div>
+                <div class="mobile-search">
+                    <img class="searchbar-icon_invisible" src="./images/search.svg"
+                         alt="search">
                 </div>
             </div>
             <div class="header__rightgroup">
@@ -37,7 +45,8 @@
                     </div>
                 </div>
                 <div class="header__userphoto">
-                    <img class="userphoto" src="./images/Userpic.png" alt="user photo">
+                    <img class="userphoto-mobile" src="./images/Userpic.png" alt="user photo">
+                    <img class="mobile-dot_channel" src="./images/three-dots.svg" alt="show more">
                 </div>
             </div>
         </div>
@@ -130,9 +139,31 @@
                 </div>
             </section>
         </aside>
+        <aside class="aside_mobile">
+            <div class="upper-menue">
+                <nav class="upper-navigation">
+                    <ul class="upper-list">
+                        <li class="upper-list__elem upper-list__elem_colored"><img
+                                 class="upper-list__img upper-list__img_home"
+                                 src="./images/home.svg" alt="home">Home</li>
+                        <li class="upper-list__elem"><img
+                                 class="upper-list__img upper-list__img_trending"
+                                 src="./images/Trending.svg"
+                                 alt="trending">Trending</li>
+                        <li class="upper-list__elem"><img
+                                 class="upper-list__img upper-list__img_subscriptions"
+                                 src="./images/Subscriptions.svg"
+                                 alt="subscriptions">Subscriptions</li>
+                        <li class="upper-list__elem"><img
+                                 class="middle-list__img middle-list__img_library"
+                                 src="./images/Library.svg" alt="library">Library</li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
         <section class="main-channel">
             <section class="cover">
-                <div class="channel-cover"></div>
+                <img src="./images/channel_cover.png" class="channel-cover" alt="image" />
             </section>
             <section class="channel-personal">
                 <div class="channel-personal__wrapper">
@@ -162,9 +193,20 @@
                                 <li class="channel-navigation__elem">Channels</li>
                                 <li class="channel-navigation__elem">Discussion</li>
                                 <li class="channel-navigation__elem">About</li>
+                                <li class="channel-navigation__elem"><img class="channel-search"
+                                         src="./images/search.svg"></li>
                             </ul>
                         </nav>
-                        <div><img src="./images/search.svg"></div>
+                        <nav class="channel-navigation_mobile">
+                            <ul class="channel-navigation__list">
+                                <li class="channel-navigation__elem">Home</li>
+                                <li class="channel-navigation__elem">Videos</li>
+                                <li class="channel-navigation__elem">Playlists</li>
+                                <li class="channel-navigation__elem"><img
+                                         src="./images/tick_player.svg" alt="tick-channel"
+                                         class="tick-channel"></li>
+                            </ul>
+                        </nav>
                     </section>
                     <section class="channel-article">
                         <div class="channel-article__wrapper">
@@ -250,9 +292,10 @@
                         <div class="channel-video__info"><span>86k views &nbsp·&nbsp 7 days
                                 ago</span><span></span>Food & Drink </div>
                     </div>
-                    <div class="channel-video__elem">
-                        <div class="channel-video__video channel-video__video_last"><span
-                                  class="channel-video__span">4:00</span></div>
+                    <div class="channel-video__elem"><img class="channel-video__video"
+                             src="./images/sports_channel.png"
+                             alt="video">
+                        <span class="channel-video__span">4:00</span>
                         <h3 class="channel-video__name">Asteroids</h3>
                         <div class="channel-video__info"><span>240k views &nbsp·&nbsp· 4 months
                                 ago</span><span></span>Dollie Blair </div>
