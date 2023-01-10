@@ -9,7 +9,7 @@ body {
 
 .main {
     display: flex;
-    max-width: 1920px;
+    max-width: 192rem;
     overflow-x: hidden;
 }
 
@@ -100,7 +100,7 @@ body {
 
 @media(max-width:890px) {
     .personal-photo {
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 }
 
@@ -127,9 +127,9 @@ body {
         overflow-x: auto;
         grid-template-columns: repeat(auto-fill, minmax(250px, 288px));
         justify-content: start;
-        grid-gap: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
+        grid-gap: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
 
@@ -141,9 +141,9 @@ body {
 
 @media(max-width:900px) {
     .video-wrapper_personal {
-        grid-gap: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
+        grid-gap: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }
 
@@ -270,7 +270,7 @@ body {
 
 @media(max-width:890px) {
     .recommended__headline {
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 }
 
@@ -290,16 +290,16 @@ body {
         overflow-x: auto;
         grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
         justify-content: start;
-        grid-gap: 30px;
-        margin-right: 20px;
-        margin-left: 20px;
+        grid-gap: 3rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
 
 @media(max-width:1200px) {
     .recommended-wrapper {
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }
 
@@ -576,9 +576,9 @@ body {
         overflow-x: auto;
         grid-template-columns: repeat(auto-fill, minmax(250px, 288px));
         justify-content: start;
-        grid-gap: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
+        grid-gap: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
 
@@ -590,15 +590,15 @@ body {
 
 @media(max-width:900px) {
     .video-wrapper {
-        grid-gap: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
+        grid-gap: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }
 
 @media(max-width:605px) {
     .video-wrapper {
-        grid-gap: 10px;
+        grid-gap: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -632,7 +632,7 @@ body {
 
 @media(max-width:890px) {
     .food-name, .food-infospan {
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 }
 
