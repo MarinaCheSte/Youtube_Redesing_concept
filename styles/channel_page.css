@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@300&display=swap');
 
+body {
+    overflow-x: hidden;
+}
+
 .main_channel {
     display: flex;
     max-width: 192rem;
-    overflow-x: hidden;
+    margin-bottom: 4rem;
 }
 
 /*COVER SECTION*/
@@ -23,6 +27,7 @@
 @media(max-width:890px) {
     .main-channel {
         width: 100%;
+        margin-right: 0;
     }
 }
 
@@ -531,12 +536,6 @@
     }
 }
 
-@media(max-width:580px) {
-    .arrows {
-        display: none;
-    }
-}
-
 .channel-video__wrapper {
     min-height: 20rem;
     max-width: 100%;
@@ -682,7 +681,13 @@
     position: absolute;
     right: 14.9rem;
     bottom: 0;
-    z-index: 2;
+    z-index: 1;
+}
+
+@media(max-width:580px) {
+    .arrows {
+        display: none;
+    }
 }
 
 .arrow {
