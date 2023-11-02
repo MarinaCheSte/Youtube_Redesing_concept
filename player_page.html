@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/playerpage.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <title>Player page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <div class="header__menu-img">
+                <img class="menu-img" src="./images/menu.svg" alt="menu">
+            </div>
+            <div class="header__logo">
+                <img class="youtube-icon" src="./images/icon.svg" alt="icon">
+                <img class='youtube-logo' src="./images/logo.svg" alt="logo">
+            </div>
+            <div class="header__searchbar">
+                <div class="searchbar">
+                    <input class="searchbar-input" placeholder="Search">
+                    <img class="searchbar-icon" src="./images/search.svg" alt="search">
+                </div>
+                <div class="mobile-search">
+                    <img class="searchbar-icon_invisible" src="./images/search.svg" alt="search">
+                </div>
+            </div>
+            <div class="header__rightgroup">
+                <div class="header__toolsgroup">
+                    <img class="videotool" src="./images/phone-18.svg" alt="video">
+                    <img class="combinedtool" src="./images/Combined_Shape.svg" alt="combined">
+                    <div class="bellgroup"><img class="belltool" src="./images/bell.svg" alt="bell">
+                        <div class="bellnumber-wrapper"><img class="bellnumber" src="./images/3.svg"
+                                 alt="number"></div>
+                    </div>
+                </div>
+                <div class="header__userphoto">
+                    <img class="userphoto-mobile" src="./images/Userpic.png" alt="user photo">
+                    <img class="mobile-dot" src="./images/three-dots.svg" alt="show more">
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="aside_mobile">
+        <div class="upper-menue">
+            <nav class="upper-navigation">
+                <ul class="upper-list">
+                    <li class="upper-list__elem upper-list__elem_colored"><img
+                             class="upper-list__img upper-list__img_home"
+                             src="./images/home.svg" alt="home">Home</li>
+                    <li class="upper-list__elem"><img
+                             class="upper-list__img upper-list__img_trending"
+                             src="./images/Trending.svg"
+                             alt="trending">Trending</li>
+                    <li class="upper-list__elem"><img
+                             class="upper-list__img upper-list__img_subscriptions"
+                             src="./images/Subscriptions.svg"
+                             alt="subscriptions">Subscriptions</li>
+                    <li class="upper-list__elem"><img
+                             class="middle-list__img middle-list__img_library"
+                             src="./images/Library.svg" alt="library">Library</li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="player-main">
+        <section class="left-section">
+            <section class="video-on">
+                <div class="video-on__wrapper">
+                    <img class="video__img" src="./images/video_on.png"
+                         alt="video">
+                    <div class="video-control">
+                        <div class="video-control__time"><span
+                                  class="time-span">1:34</span><span class="time-span">19:00</span>
+                        </div>
+                        <div class="video-control__progressbar"><img class="progress-bar"
+                                 src="./images/ProgressBar.png"
+                                 alt="progress bar"></div>
+                        <div class="video-control__pannel">
+                            <div class="control-left">
+                                <p class="control-elem control-elem_pause"><img class="pause"
+                                         src="./images/Pause.svg"
+                                         alt="pause"></p>
+                                <p class="control-elem control-elem_next"><img class="next"
+                                         src="./images/Next.svg"
+                                         alt="next"></p>
+                                <p class="control-elem control-elem_volume"><img
+                                         class="volume"
+                                         src="./images/Volume.svg"
+                                         alt="volume"></p>
+                                <p class="control-elem control-elem_volume-bar"><img
+                                         class="volume-bar"
+                                         src="./images/volumebar.svg"
+                                         alt="volume bar"> <img
+                                         class="volume-on"
+                                         src="./images/volume-on.svg"
+                                         alt="volume on"> </p>
+                            </div>
+                            <div class="control-right">
+                                <p class="control-elem control-elem_subtitles"><img
+                                         class="subtitles"
+                                         src="./images/Subtitles.svg"
+                                         alt="subtitles"></p>
+                                <p class="control-elem control-elem_settings"><img class="settings"
+                                         src="./images/Settings_video.svg"
+                                         alt="settings"></p>
+                                <p class="control-elem control-elem_size"><img
+                                         class="size"
+                                         src="./images/Size.svg"
+                                         alt="size"></p>
+                                <p class="control-elem control-elem_fullscreen"><img
+                                         class="fullscreen"
+                                         src="./images/Full_Screen.svg"
+                                         alt="full screen"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <diV class="video-control__mobile">
+                        <p class="control-elem control-elem_pause"><img class="pause"
+                                 src="./images/Pause.svg"
+                                 alt="pause"></p>
+                        <div class="video-control__time">
+                            <p
+                               class="time-span">1:34</p>
+                            <div class="video-control__progressbar"><img class="progress-bar"
+                                     src="./images/ProgressBar.png"
+                                     alt="progress bar"></div>
+                            <p class="time-span">-10:00</p>
+                        </div>
+                        <p class="control-elem control-elem_volume"><img
+                                 class="volume"
+                                 src="./images/Volume.svg"
+                                 alt="volume"></p>
+                    </diV>
+                </div>
+                <h2 class="video-name">Dude You Re Getting A Telescope</h2>
+                <div class="name-headline_mobile">
+                    <h2 class="video-name_mobile">Dude You Re Getting<br> A Telescope</h2>
+                    <p class="mobile-tick"><img src="./images/tick_player.svg" alt="tick"
+                             class="tick-img"></p>
+                </div>
+                <div class="views-pannel">
+                    <p class="views-text">123k views</p>
+                    <div class="views-control">
+                        <p class="views-elem views-elem_like"><img class="like"
+                                 src="./images/thumb-up.svg"
+                                 alt="like"> 123k</p>
+                        <p class="views-elem views-elem_dislike"><img class="dislike"
+                                 src="./images/thumb-down.svg"
+                                 alt="dislike">435k</p>
+                        <p class="views-elem views-elem_share"><img
+                                 class="share"
+                                 src="./images/share.svg"
+                                 alt="share">Share</p>
+                        <p class="views-elem views-elem_more"><img
+                                 class="more"
+                                 src="./images/more.svg"
+                                 alt="more"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="video-info">
+                <div class="theme-photo"><img class="food-theme" src="./images/food.svg"
+                         alt="theme"></div>
+                <div class="theme-text">
+                    <h3 class="theme-headline">Food & Drink</h3>
+                    <p class="theme-comment">Published on 14 Jun 2019</p>
+                    <p class="theme-comment_mobile">245K subscribed</p>
+                    <p class="theme-maintext">A successful marketing plan relies heavily on the
+                        pulling-power of advertising copy. Writing result-oriented ad copy is
+                        difficult, as it must appeal to, entice, and convince consumers to take
+                        action. There is no magic formula to write perfect ad copy; it is based on a
+                        number of factors, including ad placement, demographic, even the consumer’s
+                        mood when they see your ad.</p>
+                    <p class="theme-showmore">Show more</p>
+                </div>
+                <div class="btn-wrapper">
+                    <div class="player-btn">Subscribe 2.3m</div>
+                </div>
+                <div class="btn-wrapper_mobile"> Subscribe </div>
+            </section>
+        </section>
+        <aside class="right-section">
+            <div class="upper-block">
+                <h3 class="aside-headline">Next</h3>
+                <div class="autoplay"> <span class="autoplay-text">AUTOPLAY</span>
+                    <p class="circle"></p>
+                </div>
+            </div>
+            <div class="theme-video__elem theme-video__elem_first"><img
+                     class="theme-video theme-video_first"
+                     src="./images/ice-cream.png"
+                     alt="video"><span class="theme-video__span">8:00</span>
+                <h3 class="theme-video__name">Baby Monitor Technology</h3>
+                <div class="theme-video__info"><span>123k views</span><span></span>Dollie Blair
+                </div>
+            </div>
+            <div class="theme-video__elem theme-video__elem_second"><img class="theme-video"
+                     src="./images/cherry.png"
+                     alt="video"><span class="theme-video__span">8:00</span>
+                <h3 class="theme-video__name">A Good Autoresponder</h3>
+                <div class="theme-video__info"><span>123k views</span><span></span>Dollie Blair
+                </div>
+            </div>
+            <div class="theme-video__elem"><img class="theme-video"
+                     src="./images/pineapple_channel.png"
+                     alt="video"><span class="theme-video__span">8:00</span>
+                <h3 class="theme-video__name">Selecting The Right Hotel</h3>
+                <div class="theme-video__info"><span>123k views</span><span></span>Dollie Blair
+                </div>
+            </div>
+            <div class="theme-video__elem"><img class="theme-video"
+                     src="./images/orange.png"
+                     alt="video"><span class="theme-video__span">8:00</span>
+                <h3 class="theme-video__name">Astronomy Or Astrology</h3>
+                <div class="theme-video__info"><span>123k views</span><span></span>Dollie Blair
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
